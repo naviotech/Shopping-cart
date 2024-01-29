@@ -407,7 +407,6 @@ main .hero div {
   width: 100%;
 }
 main .hero div .primary {
-  width: -moz-max-content;
   width: max-content;
   padding: 14px 20px;
   background-color: #DDD6FE;
@@ -421,7 +420,6 @@ main .hero div .primary:hover {
   color: #DDD6FE;
 }
 main .hero div .second {
-  width: -moz-max-content;
   width: max-content;
   padding: 14px 20px;
   color: #DDD6FE;
@@ -503,8 +501,7 @@ main .courses {
   main .courses {
     display: grid;
     grid-template-columns: 30% 30%;
-    -moz-column-gap: 40px;
-         column-gap: 40px;
+    column-gap: 40px;
     row-gap: 20px;
     justify-content: center;
   }
@@ -655,4 +652,6 @@ body {
     margin-right: auto;
     margin-left: auto;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

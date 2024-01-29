@@ -157,12 +157,23 @@ const limpiarHtml=()=>{
 
 //
 const carritoPermanente = (elemento)=>{
-    if (elemento.style.display === "none"){
-        return elemento.style.display="flex"
+    if (elemento.style.display === "flex"){
+        return elemento.style.display="none"
     }else{
-        return elemento.style.display="none";
+        return elemento.style.display="flex";
     }
 }
 padreCarrito.addEventListener("click",()=>carritoPermanente(carritoGeneral));
 
 añadirListeners();
+
+//mobile
+const icono = document.querySelector(".touch");
+const navegacion = document.querySelector(".inside");
+icono.addEventListener("click", () => {
+    if(navegacion.style.display ==="block"){
+        return navegacion.style.display ="none";
+    }else{
+        return  navegacion.style.display ="block";
+    }
+});
