@@ -30,7 +30,9 @@ const agregarCurso = (element)=>{
     if(element.target.classList.contains("boton_cursos")){
         let parent = element.target.parentElement;
         let imagen = parent.previousElementSibling.querySelector('img').src;
-        imagen = imagen.substring(22);
+        const regexp = /img/i;
+        const indice = imagen.search(regexp);
+        imagen = imagen.substring(indice);
         
         let lenguaje = element.target.parentElement.firstElementChild.textContent;
         let precio = element.target.previousElementSibling.textContent.substring(1,6);
