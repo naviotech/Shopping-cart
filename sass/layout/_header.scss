@@ -1,0 +1,213 @@
+.introduction{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    .logo:hover{
+        transform: scale(1.2);
+    }
+    .desktop-tablet{
+        display: none;
+        @include breakpoint("tablet"){
+            display: block;
+            font-size: 18px;
+            ul{
+                display: flex;
+                list-style: none;
+                @include breakpoint("desktop"){
+                    gap:50px;
+                    font-size: 18px;
+                    .icon-shopping{
+                        font-size:26px;
+                    }
+                }
+                gap: 20px;
+                li{
+                    position: relative;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        position: relative;
+                        &:hover{
+                            
+                            &::after{
+                                content:"";
+                                display: block;
+                                background-color: #DDD6FE;
+                                width: 100%;
+                                height: 4px;
+                                margin-top: 5px;
+                                position: absolute;
+                                animation: header_sub 200ms linear;
+                            }
+                        }
+                    }
+                    .contact{
+                        padding:10px 24px;
+                        background-color:#DDD6FE;
+                        border-radius: 12px;
+                        color: #4C1D95;
+                        &:hover{
+                            background-color: #4C1D95;
+                            color: #DDD6FE;
+                            &::after{
+                                content:"";
+                                display: none;
+                            }
+                        }
+                    }
+                    .carrito{
+                        &:hover{
+                            transform: scale(1.2);
+                            display: block;
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        
+                    } 
+                }
+                .padre_carrito{
+                    position: relative;
+                    .carrito_dentro{
+                        display: none;
+                        position: absolute;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        right:0%;
+                        top:150%;
+                        width: 3000%;
+                        background-color: rgba(94, 94, 94, 0.895);
+                        opacity: 100%;
+                        color:white;
+                        padding: 20px 10px;
+                        
+                            
+                        .precio_total{
+                            font-weight: bold;
+                            color: white;
+                            padding: 10px 20px;
+                            background-color: red;
+                            border-radius: 12px;
+                            margin-top: 40px;
+                            margin-bottom: 20px;
+                        }
+                        
+                        .precio_total{
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+                            font-weight: bold;
+                        }
+                        .vaciar_carrito{
+                            color:#4C1D95 ;
+                            width: 100%;
+                            padding: 10px 20px;
+                            background-color: #DDD6FE;
+                            border-radius: 12px;
+                            text-align: center;
+                            &::after{
+                                display: none;
+                                
+                            }
+                            &:hover{
+                                background-color: #4C1D95;
+                                color:#DDD6FE;
+                                
+                            }
+                        }
+                        .lista_carrito{
+                            border-collapse: separate;
+                            border-spacing: 60px 10px;
+                            thead{
+                                tr{
+                                    th{
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    td{
+                                        a{
+                                            font-size: 14px;
+                                            padding:2px 6px;
+                                            background-color: red;
+                                            border-radius: 50%;
+                                            color:white;
+                                            text-align: center;
+                                            &:after{
+                                                display: none;
+                                            }
+                                            &:hover{
+                                                background-color: white;
+                                                color:red;
+                                            }
+                                        }
+                                    }
+                                }
+                                    
+                            }
+                                
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .inside{
+        display: none;
+    }
+    .mobile{
+        @include breakpoint("tablet"){
+            display: none;
+        }
+        ul{
+            list-style: none;
+            
+            li{
+                position: relative;
+                a{
+                    text-decoration: none;
+                    position: relative;
+                    .icon-reorder{
+                        color:white;
+                        font-size: 24px;
+                        
+                    }
+                    
+                }
+                .inside{
+                    position: absolute;
+                    right: 0%;
+                    flex-direction: column;
+                    list-style: none;
+                    background-color: rgba(94, 94, 94, 0.915);
+                    white-space: nowrap;
+                    gap: 10px;
+                    
+                    li{
+                        padding: 10px 56px;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            z-index: 2;
+                        }
+                        &:hover{
+                            background-color: black;
+                        }
+                        
+                    }
+                }
+                
+                &:hover .inside{
+                    display: flex;
+                }    
+            }
+        }
+    }
+}

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"><!--Para que sepa la codificacion que tiene que utilizar-->
+    <title>Tian</title><!--Es el titulo que aparece en la pestaña de nuestra web-->
+    <meta name="description" content="Mi pagina web de prueba para empezar con
+    desarrollo frontend"><!--Esta es la descripcion de nuestra web que aparecera en el buscador como introduccion del contenido de nuestra web-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--Se utiliza para que el ancho del contenido sea el ancho de la pantalla del navegador-->
+  
+    <meta name="theme-color" content="#fafafa"> <!--Esto es para cambiar el color de arriba de las pestañas predeterminado del navegador-->
+  
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+  
+    <link rel="canonical" href="tupaginaweb"><!--Sirve para indicar al buscador cual es la pagina principal-->
+  
+    <link rel="icon" type="image/png" href="img/Logo.svg" ><!--Para añadir foto(favicon) logo de nuestra web-->
+  
+    
+    <link rel="stylesheet" href="css/style.css"><!--Para añadir los estilos css del fichero style creado-->
+  
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="introduction">
+      <a href="#" class="logo"><img src="img/Logo.svg"></a>
+      <nav class="mobile">
+        <ul>
+          <li>
+            <a href="#"><i class="icon-reorder"></i></a>
+            <ul class="inside">
+              <li><a href="#"><i class="icon-shopping"></i></a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Contact Us</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav class="desktop-tablet">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a class="contact" href="#">Contact Us</a></li>
+          <li class="padre_carrito">
+            <a class = "carrito" href="#">
+              <i class="icon-shopping"></i>
+            </a>
+            <div class="carrito_dentro">
+              <table class="lista_carrito">
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Quantity</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                
+                <tbody></tbody>
+              </table>
+              <p class="precio_total">Total price: 0$</p>
+              <a href="#" class="vaciar_carrito" id="vaciar_carrito">Vaciar Carrito</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Where the joy of learn meets the power of community</h1>
+        <p>Dive deep in inmersive, interactive small groups. Expand horizons, engage in discussions and elevate your learning journey with us</p>
+        <div>
+          <a class="primary" href="#">Start your travel</a>
+          <a class="second" href="#">Watch video <i class="icon-arrow-right2"></i></a>
+        </div>
+      </section>
+      <section class="services">
+        <article>
+          <i class="icon-tags"></i>
+          <div>
+            <h2>Explore topics</h2>
+            <p>Explore our selection of courses in development</p>
+          </div>
+        </article>
+        <article>
+          <i class="icon-users"></i>
+          <div>
+            <h2>Meet new friends</h2>
+            <p>Join the network with million of students and learn</p>
+          </div>
+        </article>
+        <article>
+          <i class="icon-book"></i>
+          <div>
+            <h2>Learn code</h2>
+            <p>Learn all about code and become in a developer</p>
+          </div>
+        </article>
+        
+      </section>
+      <h2 class="popular">Popular Courses</h2>
+      <section class="courses">
+        
+        <article class="cards">
+          <div class="cards__photo">
+            <img src="img/javaScript.png">
+            <p>Development</p>
+          </div>
+          <div class="cards__content">
+            <h3>JavaScript</h3>
+            <p>By Raul Perez</p>
+            <p>Duration: 7 weeks</p>
+            <p class="amount">$14.00 USD</p>
+            <a href="#" class="boton_cursos">Buy now</a>
+          </div>
+        </article>
+
+        <article class="cards">
+          <div class="cards__photo">
+            <img src="img/reactjs.png">
+            <p>Development</p>
+          </div>
+          <div class="cards__content">
+            <h3>React</h3>
+            <p>By Raul Perez</p>
+            <p>Duration: 7 weeks</p>
+            <p class="amount">$14.00 USD</p>
+            <a href="#" class="boton_cursos">Buy now</a>
+          </div>
+        </article>
+
+        <article class="cards">
+          <div class="cards__photo">
+            <img src="img/html5.png">
+            <p>Development</p>
+          </div>
+          <div class="cards__content">
+            <h3>HTML5</h3>
+            <p>By Raul Perez</p>
+            <p>Duration: 7 weeks</p>
+            <p class="amount">$14.00 USD</p>
+            <a href="#" class="boton_cursos">Buy now</a>
+          </div>
+        </article>
+
+        <article class="cards">
+          <div class="cards__photo">
+            <img src="img/css3.png">
+            <p>Development</p>
+          </div>
+          <div class="cards__content">
+            <h3>CSS3</h3>
+            <p>By Raul Perez</p>
+            <p>Duration: 7 weeks</p>
+            <p class="amount">$14.00 USD</p>
+            <a href="#" class="boton_cursos">Buy now</a>
+          </div>
+        </article>
+        
+      </section>
+      <section class="reseñas">
+        <h2>Emily Rolando</h2>
+        <p>
+          I recently started learning to code with Tian and it's been a game-changer.
+          The lessons are clear and engaging perfect for beginners, like me.
+        </p>
+        <p>
+          I've already built my first app thanks to their hands-on approach.
+          Highly recommend Tian for anyone starting their coding journey!
+        </p>
+      </section>
+      <section class="our-services">
+        <article>
+          <img src="img/laptop-photo.png">
+          <div>
+            <h2>Explore topics</h2>
+          <p>
+            Dive deep into our diverse catalog featuring a curated selection of courses in the realms of 
+            arts and writing. Experience knowledge crafted by experts, designed to inspire and nurture your creative
+            journey
+          </p>
+          </div>
+          
+        </article>
+
+        <article>
+          <img src="img/Community-photo.png">
+          <div>
+            <h2>Meet new Friends</h2>
+          <p>
+            Connect with our expansive network, match with like-minded peers, and learn code together
+          </p>
+          </div>
+          
+        </article>
+
+        <article>
+          <img src="img/photo-find.png">
+          <div>
+            <h2>Find</h2>
+          <p>
+            Connect with people around the world in a huge community with million of students
+          </p>
+          </div>
+          
+        </article>
+
+      </section>
+    </main>
+    <footer>
+      <header class="finally">
+        <nav class="finally__primary">
+          <a href="#" ><img class="logo" src="img/Logo.svg"></a>
+          <ul>
+            <li><a href="#"><i class="icon-instagram"></i></a></li>
+            <li><a href="#"><i class="icon-figma"></i></a></li>
+            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+            <li><a href="#"><i class="icon-x"></i></a></li>
+            <li><a href="#"><i class="icon-telegram"></i></a></li>
+          </ul>
+        </nav>
+        
+        <nav class="finally__secondary">
+          <ul class="one">
+            <h3>Products</h3>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Development</a></li>
+          </ul>
+          <ul class="two">
+            <h3>Company</h3>
+            <li><a href="#">Terms & conditions</a></li>
+            <li><a href="#">Privacy & policy</a></li>
+          </ul>
+        </nav>
+      </header>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
+
+
+
