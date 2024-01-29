@@ -115,10 +115,10 @@ const crearHtml = ()=>{
     },0);
     
     if(contenidoCarrito.length == 0){
-        parrafo.textContent = `Total price: ${precioNull}$`;
+        parrafo.textContent = `Total Amount: ${precioNull}$`;
         parrafo.style.backgroundColor = "red";
     }else{
-        parrafo.textContent = `Total price: ${precioTotal.toFixed(2)}$`;
+        parrafo.textContent = `Total Amount: ${precioTotal.toFixed(2)}$`;
         parrafo.style.backgroundColor = "green";
     }
 
