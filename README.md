@@ -5,7 +5,8 @@ Este proyecto es una aplicación web responsiva que implementa la funcionalidad 
 
 ## Características Principales
 
-- Responsividad: El diseño de la aplicación se adapta a diferentes tamaños de pantalla, brindando una experiencia consistente en dispositivos móviles, tabletas y computadoras.
+- Responsividad: El diseño de la aplicación se adapta a diferentes tamaños de pantalla, brindando una experiencia consistente en dispositivos móviles, tabletas y computadoras. La funcionalidad del carrito solo esta disponible en tabletas y computadoras.
+  
 
 - Visualización Detallada: Muestra información detallada de cada curso en el carrito, incluyendo la imagen, nombre, precio y cantidad.
 
