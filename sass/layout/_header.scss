@@ -12,6 +12,7 @@
         @include breakpoint("tablet"){
             display: block;
             font-size: 18px;
+            
             ul{
                 display: flex;
                 list-style: none;
@@ -79,12 +80,13 @@
                         
                         right:0%;
                         top:150%;
-                        width: 3000%;
+                        
+                        max-width: 4000%;
+                        
                         background-color: rgba(94, 94, 94, 0.895);
                         opacity: 100%;
                         color:white;
                         padding: 20px 10px;
-                        
                             
                         .precio_total{
                             font-weight: bold;

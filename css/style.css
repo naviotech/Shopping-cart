@@ -265,7 +265,7 @@
     align-items: center;
     right: 0%;
     top: 150%;
-    width: 3000%;
+    max-width: 4000%;
     background-color: rgba(94, 94, 94, 0.895);
     opacity: 100%;
     color: white;

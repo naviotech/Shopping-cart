@@ -12,7 +12,7 @@ const precioNull = 0;
 
 
 //funciones
-const añadirListeners = ()=>{
+const anadirListeners = ()=>{
     listaCursos.addEventListener("click", agregarCurso);
     tableBody.addEventListener("click", eliminarCurso);
     vaciarCarrito.addEventListener("click", vaciar);
@@ -110,9 +110,10 @@ const producto = (imagen, lenguaje, precio)=>{
 const crearHtml = ()=>{
     //para que no se acumulen los elementos
     limpiarHtml();
+    
     let precioTotal = contenidoCarrito.reduce((acumulador, elemento)=>{
         return acumulador + elemento.precio;
-    },0);
+    },0); 
     
     if(contenidoCarrito.length == 0){
         parrafo.textContent = `Total Amount: ${precioNull}$`;
@@ -165,7 +166,7 @@ const carritoPermanente = (elemento)=>{
 }
 padreCarrito.addEventListener("click",()=>carritoPermanente(carritoGeneral));
 
-añadirListeners();
+anadirListeners();
 
 //mobile
 const icono = document.querySelector(".touch");
