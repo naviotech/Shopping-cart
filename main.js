@@ -19,8 +19,12 @@ const anadirListeners = ()=>{
 
     //Muestra los cursos del localstorage en el dom
     document.addEventListener("DOMContentLoaded", () => {
-        contenidoCarrito = JSON.parse(localStorage.getItem('carrito'))
-        crearHtml();
+        const cursosStorage = localStorage.getItem('carrito');
+        if(cursosStorage !== null){
+            contenidoCarrito = JSON.parse(cursorsStorage);
+            crearHtml();
+        }
+        
     })
 }
 
